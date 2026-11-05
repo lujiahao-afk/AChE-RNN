@@ -1,0 +1,29 @@
+D:\Desktop\rnn模型学习\REINVENT-1.0.1\project\
+│
+├── 原始数据文件
+│   ├── ache_inhibitors_cleaned.csv      # 4234条抑制剂数据
+│   ├── ache_smiles.txt                  # SMILES列表
+│   ├── ache_smiles_druglike.txt         # 类药SMILES
+│   ├── ache_smiles_strong.txt           # 强活性SMILES
+│   ├── structure.csv / .tsv             # 原始结构数据
+│   ├── clean_ache_data.py               # 数据清理脚本
+│   └── chakan.py                        # 数据查看脚本
+│
+├── 训练脚本
+│   ├── train_rnn.py                     # 基础RNN训练 ✅
+│   ├── generate_optimized.py            # 优化生成 ✅
+│   ├── train_rl.py                      # 强化学习微调 ✅
+│   └── plot_results.py                  # 可视化 (新增)
+│
+├── 模型文件
+│   ├── best_rnn_model.pth               # 基础RNN模型
+│   └── rl_tuned_model.pth               # RL微调模型
+│
+└── 生成结果
+    ├── generated_molecules.csv          # 基础生成分子
+    ├── generated_molecules_full.csv     # 完整生成结果
+    ├── generated_druglike_molecules.csv # 类药分子
+    ├── rl_generated_all.csv             # RL全部生成
+    ├── rl_generated_druglike.csv        # RL类药分子
+    └── training_results.png             # 可视化图表 (新增)
+
